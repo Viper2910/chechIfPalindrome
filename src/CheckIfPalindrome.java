@@ -2,8 +2,8 @@ import java.util.Scanner;
 
 public class CheckIfPalindrome{
 
-    // Take input from user
-    public String getInputFromUser(){
+    // Take input from user.
+    public static String getInputFromUser(){
 
         String input;
         Scanner scanner = new Scanner(System.in);
@@ -14,6 +14,17 @@ public class CheckIfPalindrome{
         return input;
     }
 
-    
+    //Reverse input given bu user.
+    public static String reverseInputGivenByUser(String input){
+        StringBuilder reversedInput = new StringBuilder();
+
+        for (int i = input.length()-1; i >= 0; i--){
+            reversedInput.append(input.charAt(i));
+        }
+
+        return reversedInput.toString();
+    }
+
+
 
 }
