@@ -32,7 +32,7 @@ public class CheckIfPalindrome{
 
     //Give answer to user
     public static void giveAnswerToUser(boolean isPalindrome){
-        String answer = (isPalindrome == true) ? "Given input is palindrome." : "Given input is not a palindrome.";
+        String answer = (isPalindrome == true) ? "Given input is palindrome. \n\n" : "Given input is not a palindrome.\n\n";
         System.out.println(answer);
     }
 
