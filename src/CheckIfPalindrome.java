@@ -4,7 +4,6 @@ public class CheckIfPalindrome{
 
     // Take input from user.
     public static String getInputFromUser(){
-
         String input;
         Scanner scanner = new Scanner(System.in);
 
@@ -25,6 +24,11 @@ public class CheckIfPalindrome{
         return reversedInput.toString();
     }
 
+    //Check if input string is the same as reversed input.
+    public static boolean checkIfInputIsPalindrome(String input, String reversedInput){
+      boolean answer = (input.equals(reversedInput)) ? true : false;
+        return answer;
+    }
 
 
 }
