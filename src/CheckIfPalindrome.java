@@ -26,9 +26,14 @@ public class CheckIfPalindrome{
 
     //Check if input string is the same as reversed input.
     public static boolean checkIfInputIsPalindrome(String input, String reversedInput){
-      boolean answer = (input.equals(reversedInput)) ? true : false;
-        return answer;
+      boolean isPalindrome = (input.equals(reversedInput)) ? true : false;
+        return isPalindrome;
     }
 
+    //Give answer to user
+    public static void giveAnswerToUser(boolean isPalindrome){
+        String answer = (isPalindrome == true) ? "Given input is palindrome." : "Given input is not a palindrome.";
+        System.out.println(answer);
+    }
 
 }
